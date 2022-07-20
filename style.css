@@ -11,12 +11,37 @@ body {
 /*--------------
    mobile
 --------------*/
-@media screen and (max-width:576px) {
-    /* .blog{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    } */
-} 
+@media only screen and (max-width: 600px) {
+    main{
+flex-direction: column;
+flex-wrap: wrap;
+
+    }
+    #blogs{
+        grid-template-columns: repeat(1,1fr) !important ;
+        gap: 5px ;
+    }
+    ul.footer-links{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and ( max-width: 992px ) {
+    main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+            }
+            #blogs{
+                grid-template-columns: repeat(2,1fr) ;
+                gap: 5px ;
+            } 
+            ul.footer-links{
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+}   
+
 /*---------------
    background 
 ----------------*/
@@ -71,13 +96,13 @@ header img {
         right: 1120px;
     }
 }
-.ball{
+/* .ball{
     width: 130px;
     position: relative;
     animation: slibing 1s ease-in-out 0.5s 4 alternate;
     animation-play-state: running;
     transition: 10s;
-}
+} */
 
 /*---------------
    Main section
