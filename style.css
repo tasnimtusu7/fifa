@@ -227,3 +227,177 @@ footer ul {
     color: white;
     font-size: 33px;
 }
+
+/*--------------
+   html-two
+---------------*/
+
+header {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 40px 0 0 10%;
+    background-color: black;
+    color: white;
+    margin: 40px auto; 
+    border-radius: 20px;
+}
+
+header .background-text {
+    width: 60%;
+}
+
+header p {
+    margin: 30px 0 50px 0;
+}
+
+a.button-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 7px;
+    font-weight: 900;
+    color: white;
+    background-color: red;
+}
+
+header .background-image {
+    width: 40%;
+    min-height: 400px;
+    overflow: visible;
+    animation: banner 15s linear 0s infinite;
+}
+
+header img {
+    width: 100%;
+}
+main {
+    width: 80%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+/* --------------
+   three-button
+--------------- */
+aside {
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    height: max-content;
+    padding: 30px 20px;
+    margin-right: 20px;
+    background-color: black;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+}
+
+aside a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
+}
+.button-two{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+aside a:hover {
+    background-color: green;
+    color: red;
+}
+/* ----------
+     blog
+-----------*/
+#blog-two{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    flex: 1;
+}
+.boxx{
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+.flags{
+    padding: 50px 5%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.flags img{
+    width: 40%;
+}
+.blog-two-info{
+    margin-bottom: 50px;
+}
+.name{
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+.time{
+    font-size: 15px;
+    color: grey;
+}
+
+/* footer style too*/
+
+
+footer {
+    padding-top: 60px;
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+footer h2{
+    color: red;
+    font-size: 45px;
+}
+
+footer h2:hover{
+    color: green;
+    transition: .5s;
+}
+
+footer hr {
+    width: 60%;
+    margin: 40px auto;
+    border-bottom: 1px solid white;
+}
+
+footer ul { 
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 135px;
+    gap: 50px;
+    list-style: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: red;
+    transition: .5s;
+}
+
+.footer-link:hover {
+    color: green;
+}
+.fa-facebook-square, .fa-instagram-square, .fa-whatsapp-square{
+    width: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 33px;
+}
+
