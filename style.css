@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,16 +8,15 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
-
-
-h1 {
-    font-size: 40px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
+/*--------------
+   mobile
+--------------*/
+@media screen and (max-width:576px) {
+    /* .blog{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } */
+} 
 /*---------------
    background 
 ----------------*/
@@ -48,6 +47,10 @@ a.button-link {
     font-weight: 900;
     color: white;
     background-color: red;
+}
+a.button-link:hover{
+    background-color: green;
+    color: red;
 }
 
 header .background-image {
