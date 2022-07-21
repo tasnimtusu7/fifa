@@ -323,6 +323,7 @@ aside {
     display: flex;
     flex-direction: column;
     min-width: 240px;
+    height: max-content;
     padding: 30px 20px;
     margin-right: 20px;
     background-color: black;
@@ -333,13 +334,11 @@ aside {
 
 aside a {
     display: inline-block;
-    text-decoration: none;
     color: white;
     background-color: red;
     padding: 15px 30px;
     border-radius: 10px;
     font-weight: bold;
-    transition: .5s;
 }
 .button-two{
     margin-top: 10px;
