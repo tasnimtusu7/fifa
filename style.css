@@ -8,40 +8,56 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
-/*--------------
-   mobile
---------------*/
-@media only screen and (max-width: 600px) {
-    main{
-flex-direction: column;
-flex-wrap: wrap;
-
-    }
-    #blogs{
-        grid-template-columns: repeat(1,1fr) !important ;
-        gap: 5px ;
-    }
-    ul.footer-links{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
+/*----------------------------
+   mobile tablet responsive
+----------------------------*/
 @media only screen and ( max-width: 992px ) {
     main{
         flex-direction: column;
         flex-wrap: wrap;
-        
-            }
+
+        }
+
             #blogs{
-                grid-template-columns: repeat(2,1fr) ;
+                grid-template-columns: repeat(2,1fr);
                 gap: 5px ;
             } 
-            ul.footer-links{
-                flex-direction: column;
+            .footer-links{
+                flex-direction: row;
                 flex-wrap: wrap;
             }
-}   
+            .aside a{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        
+}  
 
+
+
+@media only screen and (max-width: 576px) {
+    main{
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    #blogs{
+        grid-template-columns: repeat(1,1fr) !important ;
+        gap: 5px ;
+    }
+     .footer-links{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
 /*---------------
    background 
 ----------------*/
@@ -82,7 +98,6 @@ header .background-image {
     width: 40%;
     min-height: 400px;
     overflow: visible;
-    animation: banner 15s linear 0s infinite;
 }
 
 header img {
@@ -96,13 +111,13 @@ header img {
         right: 1120px;
     }
 }
-/* .ball{
-    width: 130px;
+.ball{
+    width: 100px;
     position: relative;
     animation: slibing 1s ease-in-out 0.5s 4 alternate;
     animation-play-state: running;
     transition: 10s;
-} */
+}
 
 /*---------------
    Main section
@@ -120,14 +135,11 @@ main {
 aside {
     display: flex;
     flex-direction: column;
-    min-width: 240px;
-    height: max-content;
-    padding: 30px 20px;
-    margin-right: 20px;
-    background-color: black;
     border-radius: 10px;
     position: sticky;
     top: 10px;
+    margin-right: 20px;
+    background-color: black;
 }
 
 aside a {
@@ -138,7 +150,6 @@ aside a {
     padding: 15px 30px;
     border-radius: 10px;
     font-weight: bold;
-    transition: .3s;
 }
 .button-two{
     margin-top: 10px;
@@ -230,7 +241,7 @@ footer hr {
     border-bottom: 1px solid white;
 }
 
-footer ul { 
+.footer-links { 
     width: 80%;
     display: flex;
     justify-content: center;
@@ -312,7 +323,6 @@ aside {
     display: flex;
     flex-direction: column;
     min-width: 240px;
-    height: max-content;
     padding: 30px 20px;
     margin-right: 20px;
     background-color: black;
@@ -329,7 +339,7 @@ aside a {
     padding: 15px 30px;
     border-radius: 10px;
     font-weight: bold;
-    transition: .3s;
+    transition: .5s;
 }
 .button-two{
     margin-top: 10px;
@@ -403,7 +413,7 @@ footer hr {
     border-bottom: 1px solid white;
 }
 
-footer ul { 
+.footer-links { 
     width: 80%;
     display: flex;
     justify-content: center;
