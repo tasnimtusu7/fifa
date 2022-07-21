@@ -241,7 +241,7 @@ footer hr {
     border-bottom: 1px solid white;
 }
 
-.footer-links { 
+footer ul { 
     width: 80%;
     display: flex;
     justify-content: center;
@@ -410,9 +410,10 @@ footer hr {
     width: 60%;
     margin: 40px auto;
     border-bottom: 1px solid white;
+    text-decoration: none;
 }
 
-.footer-links { 
+footer ul { 
     width: 80%;
     display: flex;
     justify-content: center;
